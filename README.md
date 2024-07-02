@@ -20,6 +20,7 @@ This project is build using [![badmath](https://img.shields.io/badge/Spiral_Deve
 [![badmath](https://img.shields.io/badge/FrontEnd-React-blue)](https://react.dev/learn)
 [![badmath](https://img.shields.io/badge/BackEnd-NodeJS-darkgreen)](https://nodejs.org/)
 [![badmath](https://img.shields.io/badge/Database-MongoDB-green)](https://www.mongodb.com/)
+
 Middleware [![badmath](https://img.shields.io/badge/Axios-8A2BE2)](https://www.npmjs.com/package/axios), payment gateway [![badmath](https://img.shields.io/badge/Stripe-6B71DD)](https://stripe.com/) and also some other frameworks is used to build this project.
 
 <br>
