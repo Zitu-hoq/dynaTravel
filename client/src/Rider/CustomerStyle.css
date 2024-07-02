@@ -1,0 +1,153 @@
+
+/* Rider Details section */
+
+
+.customerDetails{
+    margin-top: 9rem;
+}
+
+.selectedRider{
+    border: dashed 3px red;
+    padding: 1rem;
+    margin: 6rem;
+    display: flex;
+    justify-content: left;
+}
+
+.selectedRider .rider{
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid #222;
+}
+
+.selectedRider .rider button{
+    display: none;
+}
+.selectedRider .rider-details{
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+}
+.selectedRider .rider img{
+    margin-left: 0rem;
+    
+}
+
+
+
+
+/* customer details section */
+
+.customer{
+    border: dashed 2px #222;
+    margin: 6rem;
+    padding: 2rem;
+}
+
+.customer .customer-details input{
+    border: none;
+    border-bottom: 3px solid #222;
+    width: 75%;
+    font-weight: 450;
+    font-size: 1rem;
+    margin: 0.3rem;
+    padding:0.7rem;
+}
+
+.customer .customer-details label{
+    font-weight: 400;
+}
+
+.customer .customer-details input:focus {  
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 3px solid green;
+    cursor: text;
+}
+
+span{
+    font-weight: 700;
+}
+
+.customer input{
+    margin: 0.3rem;
+    padding: 0.6rem;
+}
+
+.customer button{
+    width:150px
+}
+.final{
+    display: none;
+}
+
+
+/* on submit */
+.sRider{
+    border: none;
+    padding: 1rem;
+    margin: 6rem;
+    display: flex;
+    justify-content: left;
+}
+
+.sCustomer{
+    border: none;
+    margin: 3rem;
+    padding: 2rem;
+}
+.sCustomer input{
+    display: none;
+    margin: auto;
+}
+.sCustomer label{
+    padding: 2rem;
+}
+
+.sCustomer button{
+    margin: 1rem;
+    
+}
+
+.sfinal{
+    display: block;
+}
+
+
+
+.sCustomerDetails{
+    border: dashed 2px red;
+    margin: 9rem 2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:850px){
+    .selectedRider{
+        margin: 1rem;
+        display: block;
+        padding: auto;
+    }
+    .sRider{
+        margin: 0;
+        display: block;
+        font-size: 0.8rem;
+    }
+    .sCustomer{
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .customer{
+        margin: 1rem;
+        padding: auto;
+    }
+    .customer button{
+        width:150px
+    }
+}
+
+
+

@@ -1,0 +1,192 @@
+.operator{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    border-spacing: 0;
+    font-family: "Bw Helder", Helvetica, sans-serif !important;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #089D49;
+    list-style: none;
+}
+
+.bustype{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    border-spacing: 0;
+    font-family: "Bw Helder", Helvetica, sans-serif !important;
+    box-sizing: border-box;
+    color: #a8a8a8;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+b{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    border-spacing: 0;
+    font-family: "Bw Helder", Helvetica, sans-serif !important;
+    list-style: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #757A7E;
+}
+
+ul{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    color: #333;
+    border-spacing: 0;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0px 0 0 6px;
+    list-style: none;
+}
+
+.col1{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    color: #333;
+    border-spacing: 0;
+    text-align: left;
+    font-family: "Bw Helder", Helvetica, sans-serif !important;
+    box-sizing: border-box;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px 5px;
+    background: #ffffff;
+}
+
+.col2{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    color: #333;
+    border-spacing: 0;
+    box-sizing: border-box;
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px;
+    background: #ffffff;
+}
+
+.col3{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    color: #333;
+    border-spacing: 0;
+    box-sizing: border-box;
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px;
+    background: #ffffff;
+}
+
+.col4{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    border-spacing: 0;
+    box-sizing: border-box;
+    width: 15%;
+    text-align: center;
+    color: #089D49;
+    vertical-align: top;
+    padding: 10px 5px;
+    background: #ffffff;
+}
+
+.col5{
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    width: 15%;
+    font-size: 20px;
+    vertical-align: top;
+    padding: 10px 5px;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.col5 ul{
+    text-align: right;
+    padding-right: 5%;
+
+}
+
+.col5 li{
+    letter-spacing: .25px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 20px;
+    color: #079d49;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    min-width: 55px;
+    display: inline-block;
+    padding-right: 5px;
+    list-style: none;
+    border-bottom: none;
+    border-right: none;
+    padding-left: 0;
+    float: none;
+}
+
+.col5 ul li button{
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    font-family: inherit;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    background-color: #079d49;
+    color: #ffffff;
+    border-color: #079d49;
+}
+

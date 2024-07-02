@@ -1,0 +1,30 @@
+
+.riderSection,.hotelSection{
+    text-align: center;
+    padding: 4rem;
+    background: pink;
+}
+
+div h3{
+    font-size: 2rem;
+    padding: 2rem;
+}
+div p{
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.ticketSection{
+    text-align: center;
+    padding: 4rem;
+    background: #fff;
+}
+
+.ticketSection button{
+    background: #222;
+    color:white;
+}
+.ticketSection button:hover{
+    background: skyblue;
+    color:#222;
+}

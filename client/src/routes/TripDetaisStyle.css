@@ -1,0 +1,24 @@
+.TripDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.TripDimg{
+    height: 550px;
+    object-fit: cover;
+    width: 550px;
+}
+
+.tripP{
+    padding:2rem;
+}
+
+.allTripDiv{
+    margin-top: 9rem;
+    padding-top:2rem;
+    display: flex;
+    
+}

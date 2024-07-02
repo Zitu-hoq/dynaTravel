@@ -1,0 +1,19 @@
+.pDiv{
+    margin: 7rem;
+    padding:2rem;
+    text-align: center;
+}
+.uDiv{
+    display: block;
+    text-align: left;
+}
+.oDiv{
+    display: block;
+    margin-left: 3rem;
+    text-align: left;
+}
+
+.unorder{
+    font-size: 1rem;
+    list-style: disc;
+}

@@ -1,0 +1,13 @@
+.mAdmindiv{
+    text-align: center;
+}
+
+.mHeadings{
+    text-decoration: underline;
+    color:darkgray;
+}
+
+.mInputs{
+    padding:7px;
+    margin:1rem;
+}

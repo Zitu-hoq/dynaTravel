@@ -1,0 +1,52 @@
+.ticket-main{
+    background: rgb(236, 249, 234);
+}
+
+
+.ticket-main h3{
+    text-align: center;
+    padding-top: 9rem;
+    font-size: 3rem;
+}
+
+
+.searchDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.searchBox{
+    margin: 3rem ;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    width: 50%;
+    
+}
+
+.top input{
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+}
+
+.bottom input{
+    width: 45%;
+}
+
+@media screen and (max-width: 650px) {
+    .searchBox{
+        overflow: hidden;
+        width: 100%;
+    }
+    
+}

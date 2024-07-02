@@ -1,0 +1,58 @@
+.riderSelection{
+    display: flex;
+    margin-top: 7rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.rider{
+    box-shadow: 0 5px 25px 2px rgba(0,0,0,0.11);
+    margin: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    width: 370px;
+}
+
+.rider img{
+    align-items: right;
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    padding: 1.2rem;
+    margin-left: 4rem;
+    
+}
+
+.rider-details{
+    padding-bottom: 0.4rem;
+    padding-left: 5rem;
+}
+.rider button{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+@media screen and (max-width:850px){
+    .rider{
+        width: 80%;
+        text-align: center;
+    }
+    .riderSelection{
+        flex-direction: column;
+    }
+    .rider button{
+        margin-left: 0rem;
+        width: 250px;
+    }
+    .rider-details{
+        padding-left: 0rem;
+    }
+    .rider img{
+        margin-left: 0rem;
+        
+    }
+}
