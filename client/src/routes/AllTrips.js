@@ -14,14 +14,14 @@ import "./TripDetaisStyle.css";
 
 function TripDetails(){
 
-
+    const apiUrl = process.env.REACT_APP_API_URL;
     const cardImg =[cardImg1,cardImg2,cardImg3,cardImg4,cardImg5];
     const [tripData, setTripData]= useState({});
 
     const [load, setLoad]= useState(false);
     const handleTripApi = async() =>{
         try {
-            const url = "http://127.0.0.1:8080/api/trips";
+            const url = apiUrl+"/api/trips";
             const {data:res} = await axios.get(url);
             setTripData(res.trips);
             setLoad(true);

@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import "./adminStyle.css";
 
 function Admin(){
+    const apiUrl = process.env.REACT_APP_API_URL;
     const location = useLocation();
     const datax = location.state.adminData;
     const[data,setData] = useState(datax);
@@ -33,7 +34,7 @@ function Admin(){
     const handleTicketSubmit = async(e)=>{
         e.preventDefault();
         try {
-            const url = "http://127.0.0.1:8080/api/admin/ticket";
+            const url = apiUrl+"/api/admin/ticket";
             const {data:res} = await axios.post(url,ticketData);
             console.log(res.message);
             setTicketData({
@@ -54,7 +55,7 @@ function Admin(){
     const handleSubmit = async(e)=>{
         e.preventDefault();
         try {
-            const url = "http://127.0.0.1:8080/api/trips";
+            const url = apiUrl+"/api/trips";
             const {data:res} = await axios.post(url,tripData);
             console.log(res.message);
             setTripData({
@@ -74,7 +75,7 @@ function Admin(){
             productName: e.target.productName.value
         }
         try {
-            const url = "http://127.0.0.1:8080/api/orders/admin";
+            const url = apiUrl+"/api/orders/admin";
             const {data:res} = await axios.post(url,eData);
             setData(res.Orders);
         } catch (error) {

@@ -18,10 +18,11 @@ function Success(){
         productName: productName
     }
 
+    const apiUrl = process.env.REACT_APP_API_URL;
 
     const handleApi = async() =>{
         try {
-            const url = "http://127.0.0.1:8080/api/orders";
+            const url = apiUrl+"/api/orders";
             const {data:res} = await axios.post(url,data);
             if(res.status === 201){
                 console.log(res.message);

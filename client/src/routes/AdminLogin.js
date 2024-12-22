@@ -6,6 +6,7 @@ import "../components/AdminStyle.css";
 
 function AdminLogin(){
 
+    const apiUrl = process.env.REACT_APP_API_URL;
     const [data, setData] = useState({
         adminName:"",
         adminPassword:""
@@ -20,7 +21,7 @@ function AdminLogin(){
     const handleSubmit = async(e)=>{
         e.preventDefault();
         try {
-            const url = "http://127.0.0.1:8080/api/admin";
+            const url = apiUrl+"/api/admin";
         const {data:res} = await axios.post(url,data);
         const adminData = res.orders;
         navigate("/admin",{state:{adminData}});

@@ -13,7 +13,7 @@ function Payment(){
     let loggedin = localStorage.getItem("token");
     let navigate = useNavigate();
     
-    const KEY = "pk_test_51MotfOJtaZiPALBgpSDI32ch8WSSCOevkGiSPxaqpnaqiY5KRKNcGj6xTKRcVMUS4vYaqLbUQ8yeKPiwbeXsEL1A001MaJwtQ5";
+    const KEY = process.env.REACT_APP_SECRET_KEY;
 
     const location = useLocation();
     const productName = location.state.name ;
@@ -57,12 +57,12 @@ function Payment(){
 
    
     
-
+    const apiUrl = process.env.REACT_APP_API_URL;
     
 
     const handlePayment = async token =>{
         try {
-            const url = "http://127.0.0.1:8080/api/payment";
+            const url = apiUrl+"/api/payment";
             const data ={
                 name: productName,
                 amount: stripePrice,

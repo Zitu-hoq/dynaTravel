@@ -20,9 +20,11 @@ function Profile(){
         localStorage.removeItem("user");
     }
 
+    const apiUrl = process.env.REACT_APP_API_URL;
+
     async function handleApi(){
         try {
-            const url = "http://127.0.0.1:8080/api/orders/user";
+            const url = apiUrl+"/api/orders/user";
             const {data:res} = await axios.post(url,data);
             setOrders(res.orders);
             console.log(orders);

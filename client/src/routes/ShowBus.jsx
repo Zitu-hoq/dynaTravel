@@ -13,10 +13,10 @@ function ShowBus(){
     const [tickets,setTickets]=useState({});
     const[load,setLoad] = useState(false);
 
-
+    const apiUrl = process.env.REACT_APP_API_URL;
     const handleTicketApi = async() =>{
         try {
-            const url = "http://127.0.0.1:8080/api/tickets";
+            const url = apiUrl+"/api/tickets";
             const {data:res} = await axios.post(url,ticketDetail);
             setTickets(res.tickets);
             setLoad(true);
