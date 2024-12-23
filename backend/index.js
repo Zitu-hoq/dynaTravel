@@ -34,7 +34,9 @@ app.use("/api/tickets", ticketRoutes);
 
 
 app.get("/", function(req, res){
-    res.send("<h1>Ha ha! boi!! I am running...</h1>")
+    res.send(`<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <h1 style="font-size: 3rem; color: green;">Ha Ha! Boi!! I am running...</h1>
+        </body>`)
 });
 
 const port= process.env.PORT || 8080;
