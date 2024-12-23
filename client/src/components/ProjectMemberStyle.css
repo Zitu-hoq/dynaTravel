@@ -1,180 +1,175 @@
-.pBg{
-    background-color: pink;
-    padding-top: 1rem;
+.pBg {
+  background-color: pink;
+  padding-top: 1rem;
 }
 
-.mother{
-    box-sizing: border-box;
-    display: flex;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+.mother {
+  box-sizing: border-box;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.pcard{
-    position: relative;
-    width:350px;
-    height: 190px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    transition: 0.5s;
-    margin:1rem
-
+.pcard {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  margin: 1rem;
 }
 
-.pheading{
-    font-size: 2rem;
-    padding: 1rem;
-    color:#fff;
-    text-align: center;
+.pheading {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
 }
 
-.pcard:hover{
-    height: 450px;
+.pcard:hover {
+  height: 450px;
 }
 
-.imgBx{
-    position:absolute;
-    left: 50%;
-    top:-50px;
-    transform: translate(-50%);
-    width: 150px ;
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.pcard:hover .imgBx {
+  width: 250px;
+  height: 250px;
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pcard .pcontent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.pcard .pcontent .pdetails {
+  /* padding:40px; */
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(155px);
+}
+
+.pcard:hover .pcontent .pdetails {
+  transform: translateY(0px);
+}
+
+.pcard .pcontent .pdetails h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2rem;
+}
+
+.pcard .pcontent .pdetails h2 span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.pcard .pcontent .pdetails .pdata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pcard .pcontent .pdetails .pdata h3 {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+.pcard .pcontent .pdetails .pdata h3 span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.pcard .pcontent .pdetails .pactionBtn button {
+  padding: 10px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ff5f95;
+  cursor: pointer;
+}
+
+.pcard .pcontent .pdetails .pactionBtn button:hover {
+  background-color: #f8296e;
+}
+
+.pcard .pcontent .pdetails .pactionBtn button:nth-child(2) {
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
+}
+.pcard .pcontent .pdetails .pactionBtn button:nth-child(2):hover {
+  color: #222;
+}
+
+@media screen and (max-width: 850px) {
+  .mother {
+    flex-direction: column;
+    height: 1200px;
+  }
+
+  .pcard {
+    height: 350px;
+    width: 450px;
+    margin-top: 4rem;
+  }
+  .pcard:hover {
+    height: 350px;
+    width: 450px;
+  }
+
+  .pcard .imgBx {
+    width: 150px;
     height: 150px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
-    overflow: hidden;
-}
-.pcard:hover .imgBx{
-    width: 250px;
-    height: 250px;
-}
-
-.imgBx img{
-    position:absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.pcard .pcontent{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-.pcard .pcontent .pdetails{
-    /* padding:40px; */
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(155px);
-}
-
-.pcard:hover .pcontent .pdetails{
-    transform: translateY(0px);
-}
-
-.pcard .pcontent .pdetails h2{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color:#555;
-    line-height: 1.2rem;
-}
-
-.pcard .pcontent .pdetails h2 span{
-    font-size: 0.75rem;
-    font-weight: 500;
-    opacity: 0.5;
-}
-
-.pcard .pcontent .pdetails .pdata{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.pcard .pcontent .pdetails .pdata h3{
-    font-size: 1rem;
-    color:#555;
-    line-height: 1.2rem;
-    font-weight: 600;
-}
-
-.pcard .pcontent .pdetails .pdata h3 span{
-    font-size: 0.85rem;
-    font-weight: 400;
-    opacity: 0.5;
-
-}
-
-.pcard .pcontent .pdetails .pactionBtn button{
-    padding: 10px 30px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: #ff5f95;
-    cursor: pointer;
-}
-
-.pcard .pcontent .pdetails .pactionBtn button:hover{
-    background-color: #f8296e;
-}
-
-.pcard .pcontent .pdetails .pactionBtn button:nth-child(2){
-    border: 1px solid #999;
-    color: #999;
-    background: #fff;
-}
-.pcard .pcontent .pdetails .pactionBtn button:nth-child(2):hover{
-    color:#222;
-}
-
-@media screen and (max-width:850px){
-
-    .mother{
-        flex-direction: column;
-        height: 1200px;
-    }
-
-    .pcard{
-        height: 350px;
-        width: 450px;
-        margin-top: 4rem;
-        
-    }
-    .pcard:hover{
-        height: 350px;
-        width: 450px;
-        
-    }
-
-    .pcard .imgBx{
-        width: 150px;
-        height: 150px;
-    }
-    .pcard:hover .imgBx{
-        width: 150px;
-        height: 150px;
-    }
-    .pcard .pcontent .pdetails{
-        transform: translateY(10px);
-    }
-    .pcard:hover .pcontent .pdetails{
-        transform: translateY(10px);
-    }
-    .pcard .pcontent .pdetails .pactionBtn button{
-        display: inline;
-    }
+  }
+  .pcard:hover .imgBx {
+    width: 150px;
+    height: 150px;
+  }
+  .pcard .pcontent .pdetails {
+    transform: translateY(10px);
+  }
+  .pcard:hover .pcontent .pdetails {
+    transform: translateY(10px);
+  }
+  .pcard .pcontent .pdetails .pactionBtn button {
+    display: inline;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
 }

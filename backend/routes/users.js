@@ -9,9 +9,9 @@ const bcrypt = require("bcrypt");
 router.post("/", async(req,res) =>{
     try {
         const{error} = validate(req.body);
-        console.log(error);
         if(error){
             return res.status(400).send({message: error.details[0].message});
+            console.log(error);
         }
         const user = await User.findOne({email: req.body.email});
         if(user){

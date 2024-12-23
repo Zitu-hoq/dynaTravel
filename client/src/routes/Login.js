@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 
 
 
-function SignUp(){
+function Login(){
 
     const [error, setError] = useState('');
     const[data, setData] = useState({
@@ -18,7 +18,7 @@ function SignUp(){
         password:""
     });
     const location = useLocation();
-    let page = location.state.page;
+    let page = location.state?.page ?? true;
     let navigate = useNavigate();
 
 
@@ -104,5 +104,5 @@ function SignUp(){
     );
 }
 
-export default SignUp;
+export default Login;
 

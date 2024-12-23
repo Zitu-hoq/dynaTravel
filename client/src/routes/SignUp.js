@@ -31,7 +31,7 @@ function SignUp(){
         try {
             const url = apiUrl+"/api/users";
             const {data:res} = await axios.post(url,data);
-            navigate("/login");
+            navigate("/");
             console.log(res.message);
         } catch (error) {
             if(error.response && error.response.status >= 400 && error.response.status<=500){

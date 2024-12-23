@@ -38,7 +38,8 @@ function Navbar(){
                 </li>
                 )
             })}
-            {loggedin?<Link to="/profile"><button type="submit">Profile</button></Link>:<Link to="/signup"><button type="submit" >Sign Up</button></Link>}
+            <li className={clicked && "nav-links"} >{loggedin?<Link to="/profile"><button type="submit" className="show-btn">Profile</button></Link>:<Link to="/signup"><button type="submit" className="show-btn" >Sign Up</button></Link>}
+            </li>
             </ul>
         </nav>
     );

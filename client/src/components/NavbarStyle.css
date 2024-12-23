@@ -72,6 +72,10 @@ button:hover {
   display: none;
 }
 
+button.show-btn {
+  display: inline-block !important;
+}
+
 @media screen and (max-width: 933px) {
   .NavbarItems {
     z-index: 99;
