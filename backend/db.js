@@ -11,6 +11,7 @@ module.exports = () =>{
         console.log("[+] connected to MongoDB database");
     } catch (error) {
         console.log(error);
+        console.error(err.stack);
         console.log("[-] could not connected to the database");
     }
 };
