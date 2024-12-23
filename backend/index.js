@@ -32,5 +32,10 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/trips", tripRoutes);
 app.use("/api/tickets", ticketRoutes);
 
+
+app.get("/", function(req, res){
+    res.send("<h1>Ha ha! boi!! I am running...</h1>")
+});
+
 const port= process.env.PORT || 8080;
 app.listen(port, ()=> console.log("[+] Server started on port: " +port));
